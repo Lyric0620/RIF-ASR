@@ -1,7 +1,6 @@
-# 🎙️ Speech-to-Text Benchmark Framework  
+# 🎙️ RIF-ASR
 
-> A minimalist, extensible framework for benchmarking **ASR (automatic speech recognition)** engines and integrating post-processing / error correction modules.  
-> Implements the **LIR-ASR** correction paradigm proposed in:  
+> Implements the **LIR-ASR** correction paradigm proposed in:
 > 📄 *“Listening, Imagining & Refining: A Heuristic Optimized ASR Correction Framework with LLMs”* ([arXiv:2509.15095](https://arxiv.org/abs/2509.15095))  
 
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)  
