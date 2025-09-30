@@ -1,0 +1,15 @@
+python benchmark.py \
+    --engine WHISPER_LARGE_V3 \
+    --dataset FLEURS \
+    --language ZH \
+    --dataset-folder fleurs/data/cmn_hans_cn \
+    --optimization RIF_ASR \
+    --llm Qwen3-235B \
+    --njob 8 \
+    --num-candidate 3 \
+    --num-iteration 6 \
+    --neighbor True \
+    --rule True \
+    --num-sample 20 \
+    --device cuda:0 \
+    --cache True
