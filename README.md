@@ -16,9 +16,7 @@
 - [📊 Evaluation Metrics](#-evaluation-metrics)  
 - [⚙️ Supported ASR Engines](#%EF%B8%8F-supported-asr-engines)  
 - [🧩 LIR-ASR Correction Framework](#-lir-asr-correction-framework)  
-- [🚀 Usage](#-usage)  
-- [📈 Example / Results](#-example--results)  
-- [🔧 Extensions & Notes](#-extensions--notes)  
+- [🚀 Usage](#-usage) 
 - [📚 References](#-references)  
 
 ---
@@ -120,7 +118,7 @@ result = RIF_ASR(asr_text, llm="Qwen3-235B", language="ZH", normalizer=norm)
 sh scripts/evaluation_whisper_qwen.sh
 ```
 
-### 📚 References
+## 📚 References
 ```
 @misc{liu2025listeningimaginingrefining,
       title={Listening, Imagining & Refining: A Heuristic Optimized ASR Correction Framework with LLMs}, 
