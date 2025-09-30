@@ -101,19 +101,18 @@ from normalizer import Normalizer
 from languages import Languages
 
 # Init normalizer
-norm = Normalizer.create(language=Languages.EN, keep_punctuation=True, punctuation_set=".?")
+norm = Normalizer.create(language=Languages.ZH, keep_punctuation=True, punctuation_set=".?")
 
-asr_text = "THE CAT SAT ON THE MAT"
+asr_text = "由于分离和重组便宜在每一代的两个库之间来回变动"
 
 # 1. Prompt optimization
-corrected = prompt_optimization(asr_text, llm="DeepSeek-V3.1")
+corrected = prompt_optimization(asr_text, llm="Qwen3-235B")
 
 # 2. Evolutionary optimization
-refined = evolutionary_prompt_optimization(asr_text, llm="DeepSeek-V3.1")
+refined = evolutionary_prompt_optimization(asr_text, llm="Qwen3-235B")
 
 # 3. RIF-ASR with multiple candidates
-candidates = ["THE CAT SAT ON THE MAT", "THE CAT SAT ON THE HAT", "THE CAT SAT ON THE RAT"]
-result = RIF_ASR(candidates, llm="Qwen3-235B", language="EN", normalizer=norm)
+result = RIF_ASR(asr_text, llm="Qwen3-235B", language="ZH", normalizer=norm)
 ```
 
 ### 🏃 Running Benchmarks
