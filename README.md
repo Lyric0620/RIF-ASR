@@ -112,7 +112,7 @@ refined = evolutionary_prompt_optimization(asr_text, llm="Qwen3-235B")
 result = RIF_ASR(asr_text, llm="Qwen3-235B", language="ZH", normalizer=norm)
 ```
 
-### 🏃 Running Benchmarks
+### 🏃 Running Evaluation
 ```
 sh scripts/evaluation_whisper_qwen.sh
 ```
